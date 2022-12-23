@@ -8,19 +8,14 @@
 number = float(input("Введите число: "))
 
 
-
 def CountNumbers(num):
     sum = 0
-    n=1
-    
-   
-    for i in range (len(str(num))):
-        sum+=num[i]
-        #sum+=int(num/n%10)
-        #n*=10
-      
-    return sum
 
+    for i in str(num):
+        if i != '.':
+            sum += int(i)
+
+    return sum
 
 
 print(CountNumbers(number))
